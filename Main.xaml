@@ -1,0 +1,157 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="801,1144" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="82">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Form.Activities</x:String>
+      <x:String>UiPath.MobileAutomation.Activities</x:String>
+      <x:String>UiPath.MobileAutomation.Models</x:String>
+      <x:String>UiPath.MobileAutomation.Activities.Enums</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Form.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="476,1079" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Início – Netflix" sap:VirtualizedContainerService.HintSize="434,987" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="740412b8-5e9e-41ad-90fe-45031632e375" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,771" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="x:Int32" Name="nuRandom" />
+              <Variable x:TypeArguments="x:String" Name="ValueNumber" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Nova coluna 0 Src'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Nova coluna 0 Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='src' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_2" MaximumResults="0" ScopeIdentifier="740412b8-5e9e-41ad-90fe-45031632e375" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, -4976, 1903, 7601" FriendlyName="'Página inicial'" FullSelectorArgument="&lt;webctrl parentid='main-view' tag='DIV' /&gt;" Guid="0f2da536-8c7a-40b5-81f1-450ddbaa70d4" InformativeScreenshot="cb7c70be4fb86cddd84b9ce1e4d0dde5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_nflx' title='Início – Netflix' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[nuRandom]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[New Random().Next(1,ExtractDataTable.RowCount)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[ValueNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[ExtractDataTable.Rows(nuRandom)(1).ToString()]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:Replace BuilderPattern="\D{30}" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Replace_1" Input="[ValueNumber]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\D{30}&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exatamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\D{30}" RegexOption="IgnoreCase, Compiled" Result="[ValueNumber]">
+              <ui:Replace.Replacement>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:Replace.Replacement>
+            </ui:Replace>
+            <ui:Replace sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Replace_2" Input="[ValueNumber]" IsBuilderTabModified="False" Pattern="\?.*" RegexOption="IgnoreCase, Compiled" Result="[ValueNumber]">
+              <ui:Replace.Replacement>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:Replace.Replacement>
+            </ui:Replace>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[&quot;https://www.netflix.com/browse?jbv=&quot;+ValueNumber.ToString]" Version="V1" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="5808d54df6fd5a080d4b7a1b7381b6ee.png" Selector="&lt;html app='chrome.exe' htmlwindowname='_nflx' title='Início – Netflix' /&gt;" Url="https://www.netflix.com/browse" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
